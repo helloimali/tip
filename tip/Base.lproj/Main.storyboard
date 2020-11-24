@@ -124,14 +124,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dark Mode: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-eG-lzu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-eG-lzu">
                                 <rect key="frame" x="35" y="157" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUL-8L-zvD">
-                                <rect key="frame" x="313" y="152" width="51" height="31"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUL-8L-zvD">
+                                <rect key="frame" x="313" y="152" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="DarkModeToggle:" destination="9Lx-Qn-ba1" eventType="valueChanged" id="h9P-GJ-BDy"/>
                                 </connections>
@@ -139,15 +141,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hKF-qs-9XB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="R2E-eG-lzu" firstAttribute="top" secondItem="hKF-qs-9XB" secondAttribute="top" constant="69" id="1Sd-sr-h91"/>
-                            <constraint firstItem="AUL-8L-zvD" firstAttribute="leading" secondItem="R2E-eG-lzu" secondAttribute="trailing" constant="185" id="97n-AH-gIP"/>
-                            <constraint firstItem="hKF-qs-9XB" firstAttribute="bottom" secondItem="AUL-8L-zvD" secondAttribute="bottom" constant="679" id="Lov-Rg-r7a"/>
-                            <constraint firstItem="hKF-qs-9XB" firstAttribute="trailing" secondItem="AUL-8L-zvD" secondAttribute="trailing" constant="54" id="ZJm-Bc-75T"/>
-                            <constraint firstItem="R2E-eG-lzu" firstAttribute="leading" secondItem="hKF-qs-9XB" secondAttribute="leading" constant="35" id="es5-PP-lJb"/>
-                            <constraint firstItem="hKF-qs-9XB" firstAttribute="bottom" secondItem="R2E-eG-lzu" secondAttribute="bottom" constant="684" id="o45-Js-nQL"/>
-                            <constraint firstItem="AUL-8L-zvD" firstAttribute="top" secondItem="hKF-qs-9XB" secondAttribute="top" constant="64" id="tTm-BK-wjY"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="rdY-pl-rex"/>
                     <connections>
